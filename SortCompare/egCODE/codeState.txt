@@ -1,0 +1,3 @@
+const int MAX_NUM = 100;           
+const char* path="D:\\test.txt";
+const char* errLog="d:\\errLog.txt";

@@ -1,0 +1,5 @@
+cd  ./desktop
+
+cl -EHsc  a.cpp
+
+.\a

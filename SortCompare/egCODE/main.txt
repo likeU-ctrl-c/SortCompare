@@ -1,0 +1,6 @@
+ int main()
+{
+   getArray();
+   sort(a,MAX_NUM);
+    return 0;
+}

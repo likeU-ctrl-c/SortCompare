@@ -1,0 +1,20 @@
+int a[MAX_NUM];
+int total = 0;
+void getArray(){
+	 int total = 0;
+	 ifstream srcFile;
+   	 srcFile.open(path);
+   	 ofstream errFile(errLog,ios::out);
+    if(!srcFile) {
+        errFile << "error opening source file." << endl;
+        srcFile.close();
+    }
+    if(!errFile){
+    	 errFile << "error opening errlog file." << endl;
+	}
+    int x;   
+    while(srcFile >> x)
+        a[total++] = x;
+    srcFile.close();
+    errFile.close();   
+}
